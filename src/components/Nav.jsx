@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
+
 export default function Nav() {
     return(
         <nav>
-            <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">React</a></li>
-            </ul>
+            <Link to="/">HTML</Link>
+            <Link to="css">CSS</Link>
+            <Link to="javascript">JavaScript</Link>
+            <Link to="react">React</Link>
+            <Link to="sh">Sanity and Headless CMS</Link>
         </nav>
     )
 }

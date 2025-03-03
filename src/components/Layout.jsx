@@ -1,12 +1,10 @@
-export default function Layout() {
+export default function Layout({children}) {
     return(
         <main>
             <nav>
                 {/**Her skal nav importeres */}
             </nav>
-            <section>
-                {/**Her skal hvert element importeres */}
-            </section>
+            {children}
         </main>
 
     )
