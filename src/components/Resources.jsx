@@ -1,4 +1,4 @@
-import resources from "../ressurser.js";
+import resources from "../assets/ressurser.js";
 
 export default function Resorces({category}) {
     const resourceData= resources.filter((resource) => resource.category === category);
