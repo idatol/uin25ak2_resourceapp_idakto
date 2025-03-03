@@ -1,5 +1,5 @@
-export default function PageTitle() {
+export default function PageTitle({title}) {
     return(
-        <h1>HTML, CSS, Javascript, React</h1>
+        <h1>{title}</h1>
     )
 }
