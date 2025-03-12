@@ -1,0 +1,49 @@
+$white: #fff;
+$blue: #2A324B;
+$lightBlue: #58699D;
+$lightGrey: #E1E5EE;
+
+body{
+    background-color: $lightGrey;
+    #root{
+        width: 80%;
+        padding: 0;
+        nav{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+            a{
+                color: $white;
+                background-color: $blue;
+                padding: 1rem 3rem;
+                margin: 0;
+            }
+        }
+        section{
+            background-color: $white;
+            padding: 3rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h1{
+                color: $blue;
+                margin: 0;
+                font-size: large;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                li{
+                    text-align: left;
+                    a{
+                        color: $lightBlue;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

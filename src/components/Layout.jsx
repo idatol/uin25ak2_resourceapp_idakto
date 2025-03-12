@@ -1,10 +1,11 @@
-import Nav from './Nav';
+import Nav from "./Nav";
+import "../assets/styles/layout.scss";
 
 export default function Layout({children}) {
     return(
-        <main>
+        <>
             <Nav />
             {children}
-        </main>
+        </>
     )
 }
