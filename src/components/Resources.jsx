@@ -7,7 +7,7 @@ export default function Resorces({category}) {
         <section>
             <h1>{category.toUpperCase()}</h1>
             <ul>
-                {filteredResources.map((resource, index) => (
+                {resourceData.map((resource, index) => (
                     <li key={index}>
                         <a href={resource.url} target="_blank">
                             {resource.title}
