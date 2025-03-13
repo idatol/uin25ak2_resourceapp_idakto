@@ -4,6 +4,7 @@ $lightBlue: #58699D;
 $lightGrey: #E1E5EE;
 
 body{
+    font-family: "Montserrat", sans-serif;
     background-color: $lightGrey;
     #root{
         width: 80%;
@@ -13,17 +14,27 @@ body{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            gap: 10px;
             a{
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
                 color: $white;
                 background-color: $blue;
-                padding: 1rem 3rem;
+                padding: 1rem 3.5rem;
                 margin: 0;
+            }
+            a:hover{
+                color: $blue;
+                background-color: $white;
+            }
+            a.active {
+                background-color: $white;
+                color: $blue;
+                font-weight: bold;
             }
         }
         section{
             background-color: $white;
-            padding: 3rem 2rem;
+            padding: 4rem 3rem;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -31,19 +42,23 @@ body{
                 color: $blue;
                 margin: 0;
                 font-size: large;
+                font-family: "Montserrat", sans-serif;
+                font-size: 1.5rem;
             }
-            ul{
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                li{
+            ul {
+                color: $blue;
+                li {
+                    display: list-item;
                     text-align: left;
-                    a{
+            
+                    a {
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 1rem;
                         color: $lightBlue;
                         text-decoration: underline;
                     }
                 }
-            }
+            }            
         }
     }
 }

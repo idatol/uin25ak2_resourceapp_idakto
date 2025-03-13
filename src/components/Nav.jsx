@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
     return(
         <nav>
-            <Link to="/">HTML</Link>
-            <Link to="css">CSS</Link>
-            <Link to="javascript">JavaScript</Link>
-            <Link to="react">React</Link>
-            <Link to="sh">Sanity and Headless CMS</Link>
+            <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>HTML</NavLink>
+            <NavLink to="css" className={({ isActive }) => isActive ? "active" : ""}>CSS</NavLink>
+            <NavLink to="javascript" className={({ isActive }) => isActive ? "active" : ""}>JavaScript</NavLink>
+            <NavLink to="react" className={({ isActive }) => isActive ? "active" : ""}>React</NavLink>
+            <NavLink to="headless-cms" className={({ isActive }) => isActive ? "active" : ""}>Sanity and Headless CMS</NavLink>
         </nav>
-    )
+    );
 }
